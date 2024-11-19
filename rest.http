@@ -1,0 +1,43 @@
+GET http://localhost:3000/products
+
+### create a product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "mac",
+    "price": "999"
+    
+}
+
+###get a product by id
+GET http://localhost:3000/products/673c34dc76a1ff87e3532927
+
+###update a product by id
+PATCH    http://localhost:3000/products/673c34dc76a1ff87e3532927
+Content-Type: application/json
+
+{
+    "price" : 1299
+}
+
+###delete a product by id
+DELETE http://localhost:3000/products/673c34dc76a1ff87e3532927
+
+
+###
+GET http://localhost:3000/hfudyf
+
+###
+GET http://localhost:3000/test?name=imac&price=2399
+
+
+###
+GET http://localhost:3000/test/23556/imac
+
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=imac&price=2399
